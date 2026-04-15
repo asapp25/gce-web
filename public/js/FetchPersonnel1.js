@@ -11,7 +11,7 @@ async function fetchAndDisplayPersonnelData(){
         }
         // parse the response
         const userData = await response.json();
-         console.log( "here!");
+        var pi_json = {};
         //const gradList = document.getElementById('grad-table')
         //const piList = document.getElementById('pi-table')
 
@@ -24,9 +24,9 @@ async function fetchAndDisplayPersonnelData(){
             //const email = element.Email;           
             //const nameID = element.NameID;
 
-            var pi_json = {};
             
-
+            
+             console.log( element);
 
 
             
