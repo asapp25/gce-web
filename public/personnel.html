@@ -51,11 +51,11 @@
      <script type="text/Javascript" src="./js/FetchPersonnel1.js"></script>   
     <script type="text/Javascript">
             $(document).ready(function(){
-                $('pi-table').bootstrapTable({
+                $('table').bootstrapTable({
                     data: pijson
                 });
             });
-            var pijson = JSON.parse(fetchAndDisplayPersonnelData());// JSON.parse(pi_json)
+            var pijson = fetchAndDisplayPersonnelData();// JSON.parse(pi_json)
         </script>
 
 
