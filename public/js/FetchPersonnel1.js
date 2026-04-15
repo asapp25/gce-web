@@ -11,7 +11,7 @@ async function fetchAndDisplayPersonnelData(){
         }
         // parse the response
         const userData = await response.json();
-        var pi_json = JSON.stringify({});
+        
         //const gradList = document.getElementById('grad-table')
         //const piList = document.getElementById('pi-table')
 
@@ -36,7 +36,11 @@ async function fetchAndDisplayPersonnelData(){
             //listItem.innerHTML += '<a href="'  + baseUrl + '?id=' + nameID + '"> ' + friendName + '</a>, ' + webCaption + 'email: ' + email + '. ' 
 
             if(roleCode == "COPI"){
-                pi_json.push(JSON.stringify(element));
+                if(!Array.isArray(pi_json) || !pi_json.length) {
+                    var pi_json = element;
+                } else {
+                    pi_json.push(element);
+                }                
             } 
             
            //if(roleCode == "GSP"){
