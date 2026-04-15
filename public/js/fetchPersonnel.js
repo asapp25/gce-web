@@ -1,6 +1,6 @@
 //function to fetch personnel json file and display
 async function fetchAndDisplayPersonnelData(){
-    const url = './json/Personnel.json';
+    const url = '../json/Personnel.json';
 
     try {
         //fetch the data for the personnel json file
