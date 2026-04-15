@@ -19,7 +19,7 @@ async function fetchAndDisplayPersonnelData(){
         //var pi_json = [];
         userData.forEach(element => {
             const tableItem = document.createElement('tr');
-            tableItem.classList.add("table-primary");
+            tableItem.classList.add("table-light");
 
 
             const roleCode = element.RoleCode;
