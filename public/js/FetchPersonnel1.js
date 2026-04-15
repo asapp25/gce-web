@@ -13,16 +13,16 @@ async function fetchAndDisplayPersonnelData(){
         const userData = await response.json();
         
         //const gradList = document.getElementById('grad-table')
-        //const piList = document.getElementById('pi-table')
-        var pi_json = [];
+        const piList = document.getElementById('pi-table')
+        //var pi_json = [];
         userData.forEach(element => {
-            //const listItem = document.createElement('li');
+            const tableItem = document.createElement('tr');
             const roleCode = element.RoleCode;
 
-            //const friendName = element.FriendlyName;
-            //const webCaption = element.WebCaption;
-            //const email = element.Email;           
-            //const nameID = element.NameID;
+            const friendName = element.FriendlyName;
+            const webCaption = element.WebCaption;
+            const email = element.Email;           
+            const nameID = element.NameID;
 
             
             
@@ -33,19 +33,11 @@ async function fetchAndDisplayPersonnelData(){
             //const baseUrl = "https://gce-lter.marsci.uga.edu/public/app/personnel_bios.asp";
             
 
-            //listItem.innerHTML += '<a href="'  + baseUrl + '?id=' + nameID + '"> ' + friendName + '</a>, ' + webCaption + 'email: ' + email + '. ' 
+            tableItem.innerHTML += '<td>'  + friendName + '</td><td>' + webCaption + '</td><td>' + email ; 
 
             if(roleCode == "COPI"){
-                pi_json.push(element);
-                /* if(!Array.isArray(pi_json) || !pi_json.length) {
-                    
-                    var pi_json = element;
-
-                    console.log( element);
-
-                } else {
-                    pi_json.push(element);
-                }                 */
+                //pi_json.push(element);
+                piList.append(tableItem);
             } 
             
            //if(roleCode == "GSP"){
@@ -65,8 +57,8 @@ async function fetchAndDisplayPersonnelData(){
         console.error('error fetching json:', error);
         document.getElementById('personnel-list').innerHTML = '<li>Error loading data</li>';
     }
-    console.log(pi_json);
-    return pi_json;
+    //console.log(pi_json);
+    //return pi_json;
 }
 
 fetchAndDisplayPersonnelData();
