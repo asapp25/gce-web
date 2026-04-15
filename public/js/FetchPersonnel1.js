@@ -18,7 +18,8 @@ async function fetchAndDisplayPersonnelData(){
         const psList = document.getElementById('ps-table')
         //var pi_json = [];
         userData.forEach(element => {
-            const tableItem = document.createElement('tr').style.fontSize("8px");
+            const tableItem = document.createElement('tr');
+            tableItem.style.fontSize = "8px";
             tableItem.classList.add("table-light");
             
 
