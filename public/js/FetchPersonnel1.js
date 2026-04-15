@@ -14,7 +14,7 @@ async function fetchAndDisplayPersonnelData(){
         
         //const gradList = document.getElementById('grad-table')
         //const piList = document.getElementById('pi-table')
-
+        var pi_json = {};
         userData.forEach(element => {
             //const listItem = document.createElement('li');
             const roleCode = element.RoleCode;
@@ -36,15 +36,16 @@ async function fetchAndDisplayPersonnelData(){
             //listItem.innerHTML += '<a href="'  + baseUrl + '?id=' + nameID + '"> ' + friendName + '</a>, ' + webCaption + 'email: ' + email + '. ' 
 
             if(roleCode == "COPI"){
-                if(!Array.isArray(pi_json) || !pi_json.length) {
+                pi_json.push(element);
+                /* if(!Array.isArray(pi_json) || !pi_json.length) {
                     
                     var pi_json = element;
 
                     console.log( element);
-                    
+
                 } else {
                     pi_json.push(element);
-                }                
+                }                 */
             } 
             
            //if(roleCode == "GSP"){
