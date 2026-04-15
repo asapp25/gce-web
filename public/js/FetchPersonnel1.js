@@ -48,11 +48,11 @@ async function fetchAndDisplayPersonnelData(){
             //}
 
             
-            //return pi_json;
+            return pi_json;
 
 
             
-            console.log( pi_json);
+            //console.log( pi_json);
             //console.log(element.data.publicationTitle)
         });
 
