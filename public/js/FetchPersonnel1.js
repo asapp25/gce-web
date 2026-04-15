@@ -37,6 +37,7 @@ async function fetchAndDisplayPersonnelData(){
 
             if(roleCode == "COPI"){
                 if(!Array.isArray(pi_json) || !pi_json.length) {
+                    
                     var pi_json = element;
                 } else {
                     pi_json.push(element);
@@ -48,7 +49,7 @@ async function fetchAndDisplayPersonnelData(){
             //}
 
             
-            return pi_json;
+            
 
 
             
@@ -60,6 +61,8 @@ async function fetchAndDisplayPersonnelData(){
         console.error('error fetching json:', error);
         document.getElementById('personnel-list').innerHTML = '<li>Error loading data</li>';
     }
+    console.log( pi_json);
+    return pi_json;
 }
 
 fetchAndDisplayPersonnelData();
