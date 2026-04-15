@@ -48,7 +48,7 @@ async function fetchAndDisplayPersonnelData(){
             //}
 
             
-            
+            return [pi_json]
 
 
             
