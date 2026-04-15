@@ -24,7 +24,7 @@ async function fetchAndDisplayPersonnelData(){
             //const email = element.Email;           
             //const nameID = element.NameID;
 
-            var pi_json = '';
+            var pi_json = {};
             
 
 
