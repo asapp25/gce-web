@@ -26,7 +26,7 @@ async function fetchAndDisplayPersonnelData(){
 
             
             
-            // console.log( element);
+            //console.log( element);
 
 
             
@@ -39,6 +39,9 @@ async function fetchAndDisplayPersonnelData(){
                 if(!Array.isArray(pi_json) || !pi_json.length) {
                     
                     var pi_json = element;
+
+                    console.log( element);
+                    
                 } else {
                     pi_json.push(element);
                 }                
@@ -61,7 +64,7 @@ async function fetchAndDisplayPersonnelData(){
         console.error('error fetching json:', error);
         document.getElementById('personnel-list').innerHTML = '<li>Error loading data</li>';
     }
-    console.log( pi_json);
+    console.log(pi_json);
     return pi_json;
 }
 
