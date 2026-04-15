@@ -36,7 +36,7 @@ async function fetchAndDisplayPersonnelData(){
             //listItem.innerHTML += '<a href="'  + baseUrl + '?id=' + nameID + '"> ' + friendName + '</a>, ' + webCaption + 'email: ' + email + '. ' 
 
             if(roleCode == "COPI"){
-                pi_json.push(element);
+                pi_json.push(JSON.stringify(element));
             } 
             
            //if(roleCode == "GSP"){
