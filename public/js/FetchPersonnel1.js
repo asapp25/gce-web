@@ -1,6 +1,6 @@
 //function to fetch personnel json file and display
 async function fetchAndDisplayPersonnelData(){
-    const url = '../json/Personnel.json';
+    const url = '../public/json/Personnel.json';
 
     try {
         //fetch the data for the personnel json file
@@ -11,7 +11,7 @@ async function fetchAndDisplayPersonnelData(){
         }
         // parse the response
         const userData = await response.json();
-
+         console.log( "here!");
         //const gradList = document.getElementById('grad-table')
         //const piList = document.getElementById('pi-table')
 
