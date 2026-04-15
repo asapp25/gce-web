@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>
-            Hello World Test
-        </title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <script type="text/Javascript" src="./js/FetchPersonnel1.js" defer></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 
-    </head>
-    <body>
-        <div class="container">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Hello World Test
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script type="text/Javascript" src="./js/FetchPersonnel1.js"></script>
 
-            <h1>Active GCE Personnel</h1>
-            <h3>Project Administrators and Managers</h3>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
 
-            <table id="pi-table">
-                <thead>
-                    <tr>
-                        <th data-field="name">Name</th>
-                        <th data-field="role">Project role</th>
-                        <th data-field="email">Email</th>
-                    </tr>
+    <!-- Include the JavaScript file for Bootstrap table -->
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js">
+    </script>
+</head>
 
-                </thead>
-            </table>
-        </div>
-        <!-- <h1>PIs</h1>
+<body>
+    <div class="container">
+
+        <h1>Active GCE Personnel</h1>
+        <h3>Project Administrators and Managers</h3>
+
+        <table id="pi-table">
+            <thead>
+                <tr>
+                    <th data-field="name">Name</th>
+                    <th data-field="role">Project role</th>
+                    <th data-field="email">Email</th>
+                </tr>
+
+            </thead>
+        </table>
+    </div>
+    <!-- <h1>PIs</h1>
         <ul id="pi-list">
         
         </ul>
@@ -36,7 +48,7 @@
         <ul id="grad-list">
         
         </ul> -->
-        <script type="text/Javascript">
+    <script type="text/Javascript">
             $(document).ready(function(){
                 $('pi-table').bootstrapTable({
                     data: pijson
@@ -45,7 +57,10 @@
             var pijson = JSON.parse(pi_json)
         </script>
 
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
