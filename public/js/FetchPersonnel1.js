@@ -35,13 +35,13 @@ async function fetchAndDisplayPersonnelData(){
 
             //listItem.innerHTML += '<a href="'  + baseUrl + '?id=' + nameID + '"> ' + friendName + '</a>, ' + webCaption + 'email: ' + email + '. ' 
 
-            /* if(roleCode == "COPI"){
+            if(roleCode == "COPI"){
                 if(!Array.isArray(pi_json) || !pi_json.length) {
                     var pi_json = element;
                 } else {
                     pi_json.push(element);
                 }                
-            }  */
+            } 
             
            //if(roleCode == "GSP"){
             //    gradList.appendChild(listItem);
