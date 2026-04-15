@@ -38,7 +38,7 @@ async function fetchAndDisplayPersonnelData(){
             const baseUrl = "https://gce-lter.marsci.uga.edu/public/app/personnel_bios.asp";
             
 
-            tableItem.innerHTML += '<td scope="row" style="font-size:12pt;"><a href="' + baseUrl + '?id=' + nameID + '"><strong>' + friendName +  '</strong></a></td><td>' + webCaption + '</td><td><a href="mailto:' + email + '">' + email + '</a>'
+            tableItem.innerHTML += '<td scope="row" style="font-size:8pt;"><a href="' + baseUrl + '?id=' + nameID + '"><span class="fw-m">' + friendName +  '</span</a></td><td>' + webCaption + '</td><td><a href="mailto:' + email + '">' + email + '</a>'
 
             if(roleCode == "COPI"){
                 //pi_json.push(element);
