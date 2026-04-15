@@ -9,7 +9,7 @@
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js">
     </script>
@@ -27,21 +27,24 @@
     <div class="container">
 
         <h1>Active GCE Personnel</h1>
-        <h3>Project Administrators and Managers</h3>
 
-        <table id="pi-table">
-            <thead>
-                <tr>
-                    <th data-field="name">Name</th>
-                    <th data-field="role">Project role</th>
-                    <th data-field="email">Email</th>
-                </tr>
+        <div class="table-responsive caption-top">
+            <h3 c>Project Administrators and Managers</h3>
 
-            </thead>
-            <tbody>
+            <table id="pi-table">
+                <thead>
+                    <tr>
+                        <th data-field="name">Name</th>
+                        <th data-field="role">Project role</th>
+                        <th data-field="email">Email</th>
+                    </tr>
 
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    //pi list from json data
+                </tbody>
+            </table>
+        </div>
     </div>
     <!-- <h1>PIs</h1>
         <ul id="pi-list">
@@ -51,7 +54,7 @@
         <ul id="grad-list">
         
         </ul> -->
-     <script type="text/Javascript" src="./js/FetchPersonnel1.js"></script>   
+    <script type="text/Javascript" src="./js/FetchPersonnel1.js"></script>
     <!-- <script type="text/Javascript">
             $(document).ready(function(){
                 $('table').bootstrapTable({
