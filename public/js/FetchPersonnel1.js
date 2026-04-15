@@ -14,7 +14,7 @@ async function fetchAndDisplayPersonnelData(){
         
         //const gradList = document.getElementById('grad-table')
         //const piList = document.getElementById('pi-table')
-        var pi_json = {};
+        var pi_json = [];
         userData.forEach(element => {
             //const listItem = document.createElement('li');
             const roleCode = element.RoleCode;
