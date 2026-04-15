@@ -11,7 +11,7 @@ async function fetchAndDisplayPersonnelData(){
         }
         // parse the response
         const userData = await response.json();
-        var pi_json = {};
+        var pi_json = JSON.stringify({});
         //const gradList = document.getElementById('grad-table')
         //const piList = document.getElementById('pi-table')
 
@@ -48,7 +48,7 @@ async function fetchAndDisplayPersonnelData(){
 
 
             
-            console.log( JSON.stringify(pi_json));
+            console.log( pi_json);
             //console.log(element.data.publicationTitle)
         });
 
