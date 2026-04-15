@@ -19,7 +19,7 @@ async function fetchAndDisplayPersonnelData(){
         //var pi_json = [];
         userData.forEach(element => {
             const tableItem = document.createElement('tr');
-            tableItem.style.fontSize = "8px";
+            tableItem.style.fontSize = "8pt";
             tableItem.classList.add("table-light");
             
 
