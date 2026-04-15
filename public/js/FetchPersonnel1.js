@@ -18,8 +18,9 @@ async function fetchAndDisplayPersonnelData(){
         const psList = document.getElementById('ps-table')
         //var pi_json = [];
         userData.forEach(element => {
-            const tableItem = document.createElement('tr');
+            const tableItem = document.createElement('tr').style.fontSize("8px");
             tableItem.classList.add("table-light");
+            
 
 
             const roleCode = element.RoleCode;
@@ -38,7 +39,7 @@ async function fetchAndDisplayPersonnelData(){
             const baseUrl = "https://gce-lter.marsci.uga.edu/public/app/personnel_bios.asp";
             
 
-            tableItem.innerHTML += '<td scope="row" style="font-size:8pt;"><a href="' + baseUrl + '?id=' + nameID + '"><span class="fw-m">' + friendName +  '</span></a></td><td>' + webCaption + '</td><td><a href="mailto:' + email + '">' + email + '</a>'
+            tableItem.innerHTML += '<td scope="row"><a href="' + baseUrl + '?id=' + nameID + '">' + friendName +  '</a></td><td>' + webCaption + '</td><td><a href="mailto:' + email + '">' + email + '</a>'
 
             if(roleCode == "COPI"){
                 //pi_json.push(element);
