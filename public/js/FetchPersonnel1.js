@@ -15,6 +15,7 @@ async function fetchAndDisplayPersonnelData(){
         //const gradList = document.getElementById('grad-table')
         const piList = document.getElementById('pi-table')
         const gsList = document.getElementById('gs-table')
+        const psList = document.getElementById('ps-table')
         //var pi_json = [];
         userData.forEach(element => {
             const tableItem = document.createElement('tr');
@@ -47,6 +48,11 @@ async function fetchAndDisplayPersonnelData(){
             if(roleCode == "GSP" || roleCode == "GSM"){
                 //pi_json.push(element);
                 gsList.append(tableItem);
+            } 
+
+            if(roleCode == "OS" || roleCode == "Tech" || roleCode == "AA"){
+                //pi_json.push(element);
+                psList.append(tableItem);
             } 
 
             
