@@ -36,7 +36,7 @@ async function fetchAndDisplayPersonnelData(){
 
             
             
-            //console.log( element);
+            console.log( category);
 
 
             
