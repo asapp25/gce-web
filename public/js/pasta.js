@@ -539,6 +539,7 @@ window.onload = function () {
       makeAutocomplete("creator", PASTA_LOOKUP["author"]);
       makeAutocomplete("taxon", PASTA_LOOKUP["taxonomic"]);
 
-      console.log(url);
+      
    }
+   console.log(url);
 };
