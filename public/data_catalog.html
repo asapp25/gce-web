@@ -72,7 +72,44 @@
         </div>
     </header>
     <main>
-        <div id="searchResults"></div>
+        <div id="pastaClient">
+            <form id="dataSearchForm" name="dataSearchForm">
+                <div class="form-group row align-items-center">
+                    <div class="col-auto">
+                        <label class="col-form-label" for="coreArea">LTER Core Area</label>
+                        <select class="form-select mb-4" name="coreArea" id="coreArea">
+                            <option value="any">Any</option>
+                            <option value="primary production">Primary Production</option>
+                            <option value="population dynamics">Population Dynamics</option>
+                            <option value="movement of organic matter">Movement of Organic Matter</option>
+                            <option value="movement of inorganic matter">Movement of Inorganic Matter</option>
+                            <option value="disturbance patterns">Disturbance Patterns</option>
+                            <option value="land use and land cover change">Land Use and Land Cover Change</option>
+                            <option value="human-environment interactions">Human-Environment Interactions</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="hidden" id="sort" name="sort" value="score">
+                        <input autofocus="" class="form-control me-2" name="q"
+                            placeholder="Enter search term or package ID" type="text" aria-label="Enter search term">
+                        <div>
+                            <button class="btn btn-outline-dark" type="submit"
+                                aria-label="Submit Search">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <div class="loading" id="loading-div">
+                <i class="fas fa-spinner fa-pulse fa-3x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="resultCount" id="resultCount"></div>
+            <div id="searchResults"></div>
+            <div class="pagination" id="paginationBot"></div>
+        </div>
     </main>
 
     <footer id="footer" class="footer light-background">
