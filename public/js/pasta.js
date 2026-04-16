@@ -447,7 +447,7 @@ window.onload = function () {
          if (sortBy === "score" || sortBy === "pubdate" || sortBy === "enddate")
             param += "desc";
          else
-            param += "desc";
+            param += "asc";
          param += "&sort=packageid,desc"; //edited to desc by AS 4/16/2026
          return param;
       }
