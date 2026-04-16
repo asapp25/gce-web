@@ -448,7 +448,7 @@ window.onload = function () {
             param += "desc";
          else
             param += "asc";
-         param += "&sort=packageid,asc";
+         param += "&sort=packageid,desc"; //edited to desc by AS 4/16/2026
          return param;
       }
 
