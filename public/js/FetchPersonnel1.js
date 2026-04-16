@@ -16,6 +16,9 @@ async function fetchAndDisplayPersonnelData(){
         const piList = document.getElementById('pi-table')
         const gsList = document.getElementById('gs-table')
         const psList = document.getElementById('ps-table')
+        const adminList = document.getElementById('admin-table')
+        const aiList = document.getElementById('ai-table')
+        const opList = document.getElementById('op-table')
         //var pi_json = [];
         userData.forEach(element => {
             const tableItem = document.createElement('tr');
@@ -24,7 +27,7 @@ async function fetchAndDisplayPersonnelData(){
             
 
 
-            const roleCode = element.RoleCode;
+            const category = element.category;
 
             const friendName = element.FriendlyName;
             const webCaption = element.WebCaption;
@@ -42,32 +45,36 @@ async function fetchAndDisplayPersonnelData(){
 
             tableItem.innerHTML += '<td scope="row"><a href="' + baseUrl + '?id=' + nameID + '">' + friendName +  '</a></td><td>' + webCaption + '</td><td><a href="mailto:' + email + '">' + email + '</a>'
 
-            if(roleCode == "COPI"){
+            if(category == "Investigators"){
                 //pi_json.push(element);
                 piList.append(tableItem);
             } 
 
-            if(roleCode == "GSP" || roleCode == "GSM"){
+            if(category == "Graduate Students"){
                 //pi_json.push(element);
                 gsList.append(tableItem);
             } 
 
-            if(roleCode == "OS" || roleCode == "Tech" || roleCode == "AA"){
+            if(category == "Staff"){
                 //pi_json.push(element);
                 psList.append(tableItem);
             } 
 
+            if(category == "Admin"){
+                //pi_json.push(element);
+                adminList.append(tableItem);
+            } 
             
-            
-           //if(roleCode == "GSP"){
-            //    gradList.appendChild(listItem);
-            //}
+            if(category == "Affiliates"){
+                //pi_json.push(element);
+                aiList.append(tableItem);
+            } 
 
-            
-            
-
-
-            
+            if(category == "Other Affiliates"){
+                //pi_json.push(element);
+                opList.append(tableItem);
+            } 
+           
             //console.log( pi_json);
             //console.log(element.data.publicationTitle)
         });
