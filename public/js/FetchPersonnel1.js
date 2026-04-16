@@ -27,7 +27,7 @@ async function fetchAndDisplayPersonnelData(){
             
 
 
-            const category = element.category;
+            const category = element.Category;
 
             const friendName = element.FriendlyName;
             const webCaption = element.WebCaption;
@@ -36,7 +36,7 @@ async function fetchAndDisplayPersonnelData(){
 
             
             
-            console.log( category);
+            console.log(category);
 
 
             
