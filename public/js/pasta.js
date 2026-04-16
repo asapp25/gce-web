@@ -482,6 +482,7 @@ window.onload = function () {
       var dateQuery = makeDateQuery(sYear, eYear, datayear, pubyear);
       var sort = makeSortParam(sortBy);
       var url = base + encodeURI(params + query + dateQuery + sort);
+      console.log(url);
       return url;
    }
 
@@ -541,5 +542,5 @@ window.onload = function () {
 
       
    }
-   console.log(url);
+   
 };
