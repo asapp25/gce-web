@@ -1,6 +1,6 @@
 const { default: api } = ZoteroApiClient;
 
-const response = api().library('group', 6379466).collections('9bcf7c2bde0d23ad').items().get();
+const response = api().library('group', 6379466).items().get();
 
 const items = response.getData();
 
