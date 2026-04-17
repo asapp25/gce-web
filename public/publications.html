@@ -15,8 +15,8 @@
             crossorigin="anonymous"
         />
         
-        <script  src="./js/cors.js"></script>
-        <script  src="./js/zotero.js"></script>
+        <!-- <script  src="./js/cors.js"></script>
+        <script  src="./js/zotero.js"></script> -->
         <!-- <script src="./js/fetchBiblio.js"></script> -->
     </head>
 
@@ -58,6 +58,35 @@
             crossorigin="anonymous"
         ></script>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+   <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js">
+   </script>
+   <script src="./js/biblio-data.js"></script>
+   <script>
+      $(document).ready(function () {
+         $("#biblio_table").DataTable({
+            data: biblioData,
+            columns: [{
+                  data: "Date"
+               },
+               {
+                  data: "Citation"
+               },
+               {
+                  data: "Type"
+               },
+               {
+                  data: "Relationship"
+               }
+            ],
+            order: [
+               [3, "asc"],
+               [0, "desc"]
+            ],
+            pageLength: 100
+         });
+      });
+   </script>
         
 
     </body>
