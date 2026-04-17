@@ -275,7 +275,7 @@ function successCallback(headers, response) {
    var pageBotElementId = ZOTERO_CONFIG["pagesBotElementId"];
    showPageLinks(count, limit, showPages, currentStart, pageTopElementId);
    showPageLinks(count, limit, showPages, currentStart, pageBotElementId);
-   var query = getParameterByName("q");
+   //var query = getParameterByName("q");
    showResultCount(query, count, limit, currentStart, ZOTERO_CONFIG["countElementId"]);
 }
 
