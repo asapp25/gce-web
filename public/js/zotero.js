@@ -314,7 +314,7 @@ function searchZotero(query, itemType, sort, start) {
    showUrl(url);
    showLoading(true); */
 
-   url = "https://api.zotero.org/groups/6379466/items?format=json"
+   var url = "https://api.zotero.org/groups/6379466/items?format=json";
 
    makeCorsRequest(url, successCallback, errorCallback);
 }
