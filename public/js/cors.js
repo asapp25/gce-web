@@ -22,6 +22,8 @@ function createCORSRequest(method, url) {
 // Make the actual CORS request.
 function makeCorsRequest(url, headerDict, successCallback, errorCallback) {
    var xhr = createCORSRequest("GET", url);
+   console.log(url);
+   console.log(xhr);
    if (!xhr) {
       alert("CORS not supported");
       return;
