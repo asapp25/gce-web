@@ -1,5 +1,16 @@
 const { default: api } = ZoteroApiClient;
 
+const response = await api().library('user', 475425).collections('9KH9TNSJ').items().get();
+
+const items = response.getData();
+
+onsole.log(items.map(i => i.title));
+
+
+
+
+/* const { default: api } = ZoteroApiClient;
+
 console.log(api);
 
 const response = api().library('group', 6379466).items().get();
@@ -11,4 +22,4 @@ const items = response.raw;
 
 
 
-console.log(items.map(i => i.title));
+console.log(items.map(i => i.title)); */
