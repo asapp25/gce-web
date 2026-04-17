@@ -303,7 +303,7 @@ function encodeStyle(style) {
 
 // Passes search URL and callbacks to CORS function
 function searchZotero(query, itemType, sort, start) {
-   var zotId = (ZOTERO_CONFIG["zotIdType"] === "group") ? "groups/" + ZOTERO_CONFIG["zotId"] : "users/" + ZOTERO_CONFIG["zotId"];
+   /* var zotId = (ZOTERO_CONFIG["zotIdType"] === "group") ? "groups/" + ZOTERO_CONFIG["zotId"] : "users/" + ZOTERO_CONFIG["zotId"];
    var collection = (ZOTERO_CONFIG["collectionKey"] === "") ? "" : "/collections/" + ZOTERO_CONFIG["collectionKey"];
    var base = "https://api.zotero.org/" + zotId + collection + "/items?v=3&include=bib,data";
    var style = (ZOTERO_CONFIG["style"] === "") ? "" : "&style=" + encodeStyle(ZOTERO_CONFIG["style"]);
@@ -312,7 +312,10 @@ function searchZotero(query, itemType, sort, start) {
    var limit = "&limit=" + ZOTERO_CONFIG["limit"];
    var url = base + params + style + limit;
    showUrl(url);
-   showLoading(true);
+   showLoading(true); */
+
+   url = "https://api.zotero.org/groups/6379466/items?format=json"
+
    makeCorsRequest(url, successCallback, errorCallback);
 }
 
