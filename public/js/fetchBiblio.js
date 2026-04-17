@@ -1,6 +1,6 @@
 //function to fetch personnel json file and display
 async function fetchAndDisplayBiblioData(){
-    const url = './Biblio.json';
+    const url = './GCE_json.json';
 
     try {
         //fetch the data for the biblio json file
@@ -47,7 +47,7 @@ async function fetchAndDisplayBiblioData(){
 
 
             
-            //console.log(element.data.title)
+            console.log(element.data.title)
             //console.log(element.data.publicationTitle)
         });
 
