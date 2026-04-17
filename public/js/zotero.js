@@ -7,7 +7,7 @@ var ZOTERO_CONFIG = {
    "zotIdType": "group", // group or user
    "collectionKey": "", // Key of collection within library to search, e.g., "KHTHLKB5", or "" if no collection
    "filterTags": "", // For filtering results by tag(s), e.g., "&tag=LTER-Funded".  See examples at https://www.zotero.org/support/dev/web_api/v3/basics
-   "resultsElementId": "searchResults", // Element to contain results
+   "resultsElementId": "biblio-table", // Element to contain results
    "includeCols": ["Year", "ShowTags"], // Array of columns to include in the output table, other than Citation. The full set is ["Year", "Type", "ShowTags"]
    "showTags": ["LTER-Funded Data at Other Archives", "Legacy Data", "Data Used by BLE"], // Include a column showing this tag if present for each item
    "showTagColName": "Relationship", // Name for the column in HTML table under which the showTags will appear
