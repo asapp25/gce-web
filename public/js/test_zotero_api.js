@@ -1,6 +1,6 @@
 
 //const { default: api } = ZoteroApiClient;
-import api from 'zotero-api-client';
+import api from ZoteroApiClient;
 //console.log(api);
 const myapi = api().library('group', 6379466);
 
