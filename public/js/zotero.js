@@ -410,7 +410,7 @@ window.onload = function () {
    var pageStart = getParameterByName("start") || 0;
    var sortParam = getParameterByName("sort") || "date";
 
-   document.forms.zoteroSearchForm.q.value = query;
+   //document.forms.zoteroSearchForm.q.value = query;
    var itemType = setSelectValue("itemType", itemTypeParam);
    var sort = setSelectValue("visibleSort", sortParam);
    var sortHiddenInput = document.getElementById("sort");
