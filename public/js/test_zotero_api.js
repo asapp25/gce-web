@@ -1,16 +1,16 @@
 
 const { default: api } = ZoteroApiClient;
-const {default: response} = ZoteroApiClient;
+//const {default: response} = ZoteroApiClient;
 //import api from ZoteroApiClient;
 //console.log(api);
 const myapi = api().library('group', 6379466);
 
-const response1 =  myapi.items().get();
-console.log(response1)
+const response =  myapi.items().get();
+console.log(response)
 
-const items = response1.getData();
+const items = response.raw;
 
-
+//console.log(items)
 
 
 
