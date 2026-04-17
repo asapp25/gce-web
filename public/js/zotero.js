@@ -403,14 +403,14 @@ function setSelectValue(elId, desiredValue) {
 
 
 // When the window loads, read query parameters and perform search
-/* window.onload = function () {
+window.onload = function () {
    var query = ""//getParameterByName("q") || "";
    var itemTypeParam = getParameterByName("itemType") || "-attachment || note";
    var expanded = Boolean(getParameterByName("expanded"));
    var pageStart = getParameterByName("start") || 0;
    var sortParam = getParameterByName("sort") || "date";
 
-   document.forms.zoteroSearchForm.q.value = query;
+   //document.forms.zoteroSearchForm.q.value = query;
    var itemType = setSelectValue("itemType", itemTypeParam);
    var sort = setSelectValue("visibleSort", sortParam);
    var sortHiddenInput = document.getElementById("sort");
@@ -421,4 +421,4 @@ function setSelectValue(elId, desiredValue) {
    initForm("zoteroSearchForm", expanded);
 
    searchZotero(query, itemType, sort, pageStart);
-}; */
+};
