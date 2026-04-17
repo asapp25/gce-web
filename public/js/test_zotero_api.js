@@ -6,11 +6,11 @@ const { default: api } = ZoteroApiClient;
 const myapi = api().library('group', 6379466);
 
 const response =  myapi.items().get();
-console.log(response)
+//console.log(response)
 
 const items = response.raw;
 
-//console.log(items)
+console.log(items)
 
 
 
