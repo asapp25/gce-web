@@ -18,6 +18,7 @@
         <script  src="./js/zotero.js"></script> -->
         <!-- <script  src="./js/moment.js"></script>
         <script  src="./js/index.js"></script>
+        
         <script  type="module" src="/public/js/harvest_zotero.mjs"></script> -->
         <!-- <script src="./js/fetchBiblio.js"></script> -->
     </head>
@@ -64,7 +65,7 @@
         ></script>
 
         
-   <script src="./js/biblio-data(1).js"></script>
+   <script src="./js/biblio-data.js"></script>
    <script>
       $(document).ready(function () {
          $("#biblio_table").DataTable({
@@ -77,10 +78,8 @@
                },
                {
                   data: "Type"
-               },
-               {
-                  data: "Relationship"
                }
+              
             ],
             order: [
                [3, "asc"],
