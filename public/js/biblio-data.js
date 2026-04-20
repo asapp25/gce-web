@@ -6123,8 +6123,7 @@ var biblioData =[
             "dateAdded": "2026-04-09T14:41:59Z",
             "dateModified": "2026-04-09T14:41:59Z"
         }
-    }
-][
+    }, 
     {
         "key": "5XP4BUZG",
         "version": 401,
@@ -10290,7 +10289,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:41:53Z"
         }
     }
-][
+,
     {
         "key": "ARNGCSU2",
         "version": 376,
@@ -13556,7 +13555,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:41:47Z"
         }
     }
-][
+,
     {
         "key": "AIVVS3D8",
         "version": 351,
@@ -16517,7 +16516,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:41:42Z"
         }
     }
-][
+,
     {
         "key": "A2JNYNH7",
         "version": 326,
@@ -19420,7 +19419,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:41:37Z"
         }
     }
-][
+,
     {
         "key": "BXNVSNKK",
         "version": 301,
@@ -22201,7 +22200,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:41:31Z"
         }
     }
-][
+,
     {
         "key": "SG56Z5GL",
         "version": 276,
@@ -24887,7 +24886,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:41:20Z"
         }
     }
-][
+,
     {
         "key": "S2B9TKTL",
         "version": 251,
@@ -27808,7 +27807,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:41:15Z"
         }
     }
-][
+,
     {
         "key": "QJVR4ZUB",
         "version": 226,
@@ -30539,7 +30538,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:41:10Z"
         }
     }
-][
+,
     {
         "key": "SJLDTYY6",
         "version": 201,
@@ -33395,7 +33394,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:41:02Z"
         }
     }
-][
+,
     {
         "key": "IWF8KYUE",
         "version": 176,
@@ -36091,7 +36090,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:40:56Z"
         }
     }
-][
+,
     {
         "key": "Y5K3TLGS",
         "version": 151,
@@ -38767,7 +38766,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:40:51Z"
         }
     }
-][
+,
     {
         "key": "F9R32VSU",
         "version": 126,
@@ -41438,7 +41437,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:40:46Z"
         }
     }
-][
+,
     {
         "key": "HLGIRWGD",
         "version": 101,
@@ -44244,7 +44243,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:40:40Z"
         }
     }
-][
+,
     {
         "key": "GNJE9ULP",
         "version": 76,
@@ -46910,7 +46909,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:40:35Z"
         }
     }
-][
+,
     {
         "key": "NZXSYXN2",
         "version": 51,
@@ -49451,7 +49450,7 @@ var biblioData =[
             "dateModified": "2026-04-09T14:40:29Z"
         }
     }
-][
+,
     {
         "key": "BCE3J4NT",
         "version": 26,
