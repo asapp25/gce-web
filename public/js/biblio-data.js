@@ -814,4 +814,4 @@ var biblioData = [{"Date": "2026" , "Citation": "<div class=&quot;csl-bib-body&q
   <div class=&quot;csl-entry&quot;>Newell, Sy. &#x201C;Fungal Content and Activities in Standing-Decaying Leaf Blades of Plants of the Georgia Coastal Ecosystems Research Area.&#x201D; <i>Aquatic Microbial Ecology</i> 32 (2003): 95&#x2013;103. <a href=&quot;https://doi.org/10.3354/ame032095&quot;>https://doi.org/10.3354/ame032095</a>.</div>
 </div>" , "Type": "Journal Article" },{"Date": "2002" , "Citation": "<div class=&quot;csl-bib-body&quot; style=&quot;line-height: 1.35; padding-left: 1em; text-indent:-1em;&quot;>
   <div class=&quot;csl-entry&quot;>Moore, Willard S., James Krest, Glenn Taylor, Edward Roggenstein, Samantha Joye, and Rosalynn Lee. &#x201C;Thermal Evidence of Water Exchange through a Coastal Aquifer: Implications for Nutrient Fluxes.&#x201D; <i>Geophysical Research Letters</i> 29, no. 14 (2002). <a href=&quot;https://doi.org/10.1029/2002GL014923&quot;>https://doi.org/10.1029/2002GL014923</a>.</div>
-</div>" , "Type": "Journal Article" }]
+</div>" , "Type": "Journal Article" }];
