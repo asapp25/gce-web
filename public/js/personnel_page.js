@@ -40,7 +40,7 @@ async function fetchPersonnelBioData() {
         const roleName = user.RoleName;
 
         const name_div = document.getElementById('name');
-        name_div.appendChild(nametxt);
+        name_div.append(nametxt);
 
         //onsole.log(searchParams.get("id"));
 
