@@ -1,12 +1,23 @@
-let jsonData;
+async function fetchPersonnelBioData(){
+    const url = '../public/json/personnelBio.json';
 
-window.addEventListener("load", () => {
+const response = await fetch(url);
+        if(!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+
+        }
+        // parse the response
+        const jsonData = await response.json();
+
+
+
+/* window.addEventListener("load", () => {
     fetch("../public/json/personnelBio.json")
     .then((res) => res.json())
     .then((data) => (jsonData = data))
     .catch((err) => console.log(err));
 });
-
+ */
 const paramsString = window.location.search;
 const searchParams = new URLSearchParams(paramsString);
 
@@ -27,3 +38,5 @@ const roleName = user.RoleName;
 const name_div = document.getElementById('name').appendChild(nametxt);
 
 console.log(searchParams.get("id"));
+
+}
