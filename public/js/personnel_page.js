@@ -12,6 +12,10 @@ const searchParams = new URLSearchParams(paramsString);
 
 const id = searchParams.get("id");
 
+id.replace('-','_');
+id.replace('.','_');
+
+
 const user = jsonData[id];
 
 const nametxt = user.FriendlyName;
