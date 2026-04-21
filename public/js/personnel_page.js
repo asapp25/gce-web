@@ -16,6 +16,7 @@ id.replace('-','_');
 id.replace('.','_');
 
 console.log(id);
+console.log(jsonData);
 
 var user = jsonData[id];
 
