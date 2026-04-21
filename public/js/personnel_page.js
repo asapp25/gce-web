@@ -39,12 +39,16 @@ async function fetchPersonnelBioData() {
         const email = user.Email;
         const roleName = user.RoleName;
         const title = user.PositionTitle;
+        const research = user.ResearchFocus;
 
         const name_div = document.getElementById('name');
         name_div.append(nametxt);
 
         const positionTitle = document.getElementById('positionTitle');
         positionTitle.append(title);
+
+        const research_div = document.getElementById('researchEmphasis')
+        research_div.append(research);
 
         //onsole.log(searchParams.get("id"));
 
