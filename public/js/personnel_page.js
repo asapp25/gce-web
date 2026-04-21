@@ -43,6 +43,7 @@ async function fetchPersonnelBioData() {
         const org = user.Organization;
         const mailing_add = user.Address;
         const email_add = user.Email;
+        const imageURL = user.PhotoURL;
 
         const name_div = document.getElementById('name');
         name_div.append(nametxt);
@@ -57,11 +58,16 @@ async function fetchPersonnelBioData() {
         //const organization = "<strong>Primary Organization:</strong>:" + org;
         org_div.append(org);
 
-        const address_div = document.getElementById('contact_info');
+        const address_div = document.getElementById('contactInfo');
         address_div.append(mailing_add);
 
         const email_div = document.getElementById('emailAddress');
         email_div.append(email_add);
+
+        const img = new Image();
+        img.src = imageURL;
+        const tile = getElementById('img_div');
+        tile.appendChile(img);
 
         //onsole.log(searchParams.get("id"));
 
