@@ -47,3 +47,4 @@ async function fetchPersonnelBioData() {
         console.error('error ',error);
     }
 }
+fetchPersonnelBioData();
