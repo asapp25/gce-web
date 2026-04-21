@@ -1,8 +1,9 @@
-async function fetchPersonnelBioData(){
+async function fetchPersonnelBioData() {
     const url = '../public/json/personnelBio.json';
 
-const response = await fetch(url);
-        if(!response.ok) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
 
         }
@@ -11,32 +12,35 @@ const response = await fetch(url);
 
 
 
-/* window.addEventListener("load", () => {
-    fetch("../public/json/personnelBio.json")
-    .then((res) => res.json())
-    .then((data) => (jsonData = data))
-    .catch((err) => console.log(err));
-});
- */
-const paramsString = window.location.search;
-const searchParams = new URLSearchParams(paramsString);
+        /* window.addEventListener("load", () => {
+            fetch("../public/json/personnelBio.json")
+            .then((res) => res.json())
+            .then((data) => (jsonData = data))
+            .catch((err) => console.log(err));
+        });
+         */
+        const paramsString = window.location.search;
+        const searchParams = new URLSearchParams(paramsString);
 
-const id = searchParams.get("id");
+        const id = searchParams.get("id");
 
-id.replace('-','_');
-id.replace('.','_');
+        id.replace('-', '_');
+        id.replace('.', '_');
 
-console.log(id);
-console.log(jsonData);
+        console.log(id);
+        console.log(jsonData);
 
-var user = jsonData[id];
+        var user = jsonData[id];
 
-const nametxt = user.FriendlyName;
-const email = user.Email;
-const roleName = user.RoleName;
+        const nametxt = user.FriendlyName;
+        const email = user.Email;
+        const roleName = user.RoleName;
 
-const name_div = document.getElementById('name').appendChild(nametxt);
+        const name_div = document.getElementById('name').appendChild(nametxt);
 
-console.log(searchParams.get("id"));
+        console.log(searchParams.get("id"));
 
+    } catch {
+        console.error('error ',error);
+    }
 }
