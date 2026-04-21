@@ -9,7 +9,7 @@ async function fetchPersonnelBioData() {
         }
         // parse the response
         const jsonData = await response.json();
-
+        console.log(jsonData);
 
 
         /* window.addEventListener("load", () => {
@@ -28,9 +28,12 @@ async function fetchPersonnelBioData() {
         id.replace('.', '_');
 
         console.log(id);
-        console.log(jsonData);
+        
 
-        var user = jsonData[id];
+        const user = jsonData[id];
+
+        console.log(user);
+
 
         const nametxt = user.FriendlyName;
         const email = user.Email;
