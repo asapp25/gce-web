@@ -1,7 +1,7 @@
 let jsonData;
 
 window.addEventListener("load", () => {
-    fetch("../json/Personnel.json")
+    fetch("./json/Personnel.json")
     .then((res) => res.json())
     .then((data) => (jsonData = data))
     .catch((err) => console.log(err));
