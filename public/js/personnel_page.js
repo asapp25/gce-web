@@ -12,7 +12,7 @@ const searchParams = new URLSearchParams(paramsString);
 
 const id = searchParams.get("id");
 
-const user = jsonData.find(item = item.NameID == id);
+const user = jsonData.find(item => item.NameID == id);
 
 const nametxt = user.FriendlyName;
 const email = user.Email;
