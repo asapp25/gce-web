@@ -58,7 +58,7 @@ async function fetchPersonnelBioData() {
         //const organization = "<strong>Primary Organization:</strong>:" + org;
         org_div.append(org);
 
-        const address_div = document.getElementById('contactInfo');
+        const address_div = document.getElementById('contactInfo').innerHTML;
         address_div.appendChild(mailing_add);
 
         const email_div = document.getElementById('emailAddress');
