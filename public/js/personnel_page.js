@@ -61,13 +61,13 @@ async function fetchPersonnelBioData() {
         const address_div = document.getElementById('contactInfo');
         address_div.append(mailing_add);
 
-        const email_div = document.getElementById('emailAddress');
+        const email_div = document.getElementById('emailAddress').innerHTML;
         email_div.append(email_add);
 
         const img = new Image();
         img.src = imageURL;
-        const tile = getElementById('img_div');
-        tile.appendChile(img);
+        const tile = document.getElementById('img_div');
+        tile.appendChild(img);
 
         //onsole.log(searchParams.get("id"));
 
