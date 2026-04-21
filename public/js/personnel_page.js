@@ -39,11 +39,12 @@ async function fetchPersonnelBioData() {
         const email = user.Email;
         const roleName = user.RoleName;
 
-        const name_div = document.getElementById('name').appendChild(nametxt);
+        const name_div = document.getElementById('name');
+        name_div.appendChild(nametxt);
 
-        console.log(searchParams.get("id"));
+        //onsole.log(searchParams.get("id"));
 
-    } catch {
+    } catch (error) {
         console.error('error ',error);
     }
 }
