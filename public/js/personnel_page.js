@@ -38,7 +38,7 @@ async function fetchPersonnelBioData() {
         const nametxt = user.FriendlyName;
         const email = user.Email;
         const roleName = user.RoleName;
-        const title = user.positionTitle;
+        const title = user.PositionTitle;
 
         const name_div = document.getElementById('name');
         name_div.append(nametxt);
