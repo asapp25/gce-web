@@ -9,13 +9,15 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="./public/images/gce_logo_white.gif" rel="icon">
+  
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="./public/css/bootstrap.min.css" rel="stylesheet">
@@ -41,20 +43,42 @@
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <ul>
-          <!-- <li><a href="#hero">Home<br></a></li> -->
-           <li class="dropdown"><a href="#"><span>About</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-                <li><a href="./public/personnel.html">People</a></li>
-            </ul>       
-        </li>
-          <li><a href="#about">Research</a></li>
-          <li><a href="#services">Publications</a></li>
-          <li><a href="#portfolio">Data</a></li>
-          <li><a href="#team">Education and Outreach</a></li>
+               <!-- <li><a href="#hero">Home<br></a></li> -->
+               <li class="dropdown"><a href="#"><span>About</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                     <li><a href="./public/personnel.html">People</a></li>
+                  </ul>
+               </li>
+
+               <li><a href="#research">Research</a>
+                  <!-- <ul>
+                     <li><a href="./data_catalog.html">Data Catalog</a></li>
+                  </ul>  -->              
+               </li>
+
+               <li class="dropdown"><a href="#publications"><span>Publications</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                     <li><a href="./public/publications.html">GCE Bibliography</a></li>
+                  </ul>
+               </li>
+               <!-- <li><a href="#about">Research</a></li>
+               <li><a href="#services">Publications</a></li> -->
+               <li class="dropdown"><a href="#data"><span>Data</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                     <li><a href="/public/data_catalog.html">Data Catalog</a></li>
+                  </ul>
+               </li>
+               <li class="dropdown"><a href="#team"><span>Education and Outreach</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                     <li><a href="https://gce-schoolyard.uga.edu/">GCE Schoolyard</a></li>
+                  </ul>
+               </li>
 
 
-  <!--         <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              
+
+               <!--         <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -70,10 +94,10 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li> -->          
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+          </li> -->
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+         </nav>
 
       <!-- <a class="btn-getstarted" href="#about">Get Started</a> -->
 
@@ -83,7 +107,8 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title " style="background-image: url('./public/images/Sapelo_tidal_creek2.jpg'); background-size: cover; background-position: center;">
+    <div class="page-title "
+      style="background-image: url('./public/images/Sapelo_tidal_creek2.jpg'); background-size: cover; background-position: center;">
       <div class="container">
         <h1>Welcome to the Georgia Coastal Ecosystems LTER</h1>
         <!-- <nav class="breadcrumbs">
@@ -100,94 +125,111 @@
 
       <div class="container" data-aos="fade-up">
         <!-- <h1>Welcome to the Georgia Coastal Ecosystems LTER</h1> -->
-	  <p>The Georgia Coastal Ecosystems <a href="http://lternet.edu/">Long Term Ecological Research</a> site (GCE) was 
-        established by the <a href="http://www.nsf.gov/">National Science Foundation</a> in 2000. The study domain encompasses
-        three adjacent sounds (Altamaha, Doboy, Sapelo) on the coast of Georgia, U.S.A., and includes upland (mainland,
-        barrier islands, marsh hammocks), intertidal (fresh, brackish and salt marsh)
-        and submerged (river, estuary, continental shelf) habitats.</p><br/>
-      <div class="text-center">
-      <a href="public/site/studyarea1.html" title="View a larger version of the site map"><img src="./public/images/Website_Figures_landscape_small.png" class="rounded mx-auto d-block" alt="Study site map" name="sitemap" width="500" height="360" id="sitemap" border="0" /></a>
-       </div>  <br/>
-      <p><a href="public/app/personnel.asp">GCE LTER researchers</a> seek to understand how these ecosystems function, how they change over time, and how they might be affected by future changes in climate and human activities. We accomplish this by tracking the major factors that can cause long-term change in coastal areas (e.g. sea level, rainfall, upstream development), and measuring the effects of these factors on the study site. We also use a combination of remote sensing, modeling, and focused studies, including large-scale experiments, to assess how key marsh habitats will respond to major changes expected in the future. </p>
-      <p>Since the GCE-LTER program began in 2000, our research has contributed significantly to understanding patterns and processes that shape estuarine and marsh environments. The highlights of our work can be found here:</p>
-		<ul style="margin-left:32px">
-			<li><a href="/public/research/research_gce4.htm">Research Overview</a></li><br />
-			<li><a href="/public/research/research_bullets_gce4.htm">Key Findings</a></li><br />
-			<li><a href="public/research/signature_publications.htm">Signature Publications</a></li><br />
-			<li><a href="/public/data/signature_data.htm">Signature Datasets</a></li><br />
-		</ul>
+        <p>The Georgia Coastal Ecosystems <a href="http://lternet.edu/">Long Term Ecological Research</a> site (GCE) was
+          established by the <a href="http://www.nsf.gov/">National Science Foundation</a> in 2000. The study domain
+          encompasses
+          three adjacent sounds (Altamaha, Doboy, Sapelo) on the coast of Georgia, U.S.A., and includes upland
+          (mainland,
+          barrier islands, marsh hammocks), intertidal (fresh, brackish and salt marsh)
+          and submerged (river, estuary, continental shelf) habitats.</p><br />
+        <div class="text-center">
+          <a href="public/site/studyarea1.html" title="View a larger version of the site map"><img
+              src="./public/images/Website_Figures_landscape_small.png" class="rounded mx-auto d-block"
+              alt="Study site map" name="sitemap" width="500" height="360" id="sitemap" border="0" /></a>
+        </div> <br />
+        <p><a href="public/app/personnel.asp">GCE LTER researchers</a> seek to understand how these ecosystems function,
+          how they change over time, and how they might be affected by future changes in climate and human activities.
+          We accomplish this by tracking the major factors that can cause long-term change in coastal areas (e.g. sea
+          level, rainfall, upstream development), and measuring the effects of these factors on the study site. We also
+          use a combination of remote sensing, modeling, and focused studies, including large-scale experiments, to
+          assess how key marsh habitats will respond to major changes expected in the future. </p>
+        <p>Since the GCE-LTER program began in 2000, our research has contributed significantly to understanding
+          patterns and processes that shape estuarine and marsh environments. The highlights of our work can be found
+          here:</p>
+        <ul style="margin-left:32px">
+          <li><a href="/public/research/research_gce4.htm">Research Overview</a></li><br />
+          <li><a href="/public/research/research_bullets_gce4.htm">Key Findings</a></li><br />
+          <li><a href="public/research/signature_publications.htm">Signature Publications</a></li><br />
+          <li><a href="/public/data/signature_data.htm">Signature Datasets</a></li><br />
+        </ul>
 
-      <h2>Program Information</h2>
-      <p>The GCE field site is based at the <a href="http://www.uga.edu/ugami/">University
-        of Georgia Marine Institute</a> on Sapelo Island, and the program is administered at the <a href="http://www.marsci.uga.edu/">
-        University of Georgia Department of Marine Sciences</a> in Athens, Georgia. Individuals from multiple academic institutions and agencies are currently involved in GCE  
-        research and educational programs. The GCE Information Management
-        System provides online access to hundreds of <a href="public/app/data_catalog.asp">core data sets</a>, <a href="portal/">ancillary
-        data sets</a> from partner agencies, a <a href="public/app/resource_search.asp">searchable document and imagery archive</a>, 
-		and a <a href="public/app/biblio_query.asp">searchable bibliography</a> of over 50 years of research
-		on the Georgia coast and Sapelo Island.</p>
-       
-       <p>If you would like to sign up for our weekly newsletter click <a href="https://listserv.uga.edu/scripts/wa-UGA.exe?SUBED1=GCENEWS-L&A=1">here</a>.</p>
+        <h2>Program Information</h2>
+        <p>The GCE field site is based at the <a href="http://www.uga.edu/ugami/">University
+            of Georgia Marine Institute</a> on Sapelo Island, and the program is administered at the <a
+            href="http://www.marsci.uga.edu/">
+            University of Georgia Department of Marine Sciences</a> in Athens, Georgia. Individuals from multiple
+          academic institutions and agencies are currently involved in GCE
+          research and educational programs. The GCE Information Management
+          System provides online access to hundreds of <a href="public/app/data_catalog.asp">core data sets</a>, <a
+            href="portal/">ancillary
+            data sets</a> from partner agencies, a <a href="public/app/resource_search.asp">searchable document and
+            imagery archive</a>,
+          and a <a href="public/app/biblio_query.asp">searchable bibliography</a> of over 50 years of research
+          on the Georgia coast and Sapelo Island.</p>
+
+        <p>If you would like to sign up for our weekly newsletter click <a
+            href="https://listserv.uga.edu/scripts/wa-UGA.exe?SUBED1=GCENEWS-L&A=1">here</a>.</p>
       </div>
 
     </section><!-- /Starter Section Section -->
 
   </main>
 
-<footer id="footer" class="footer light-background">
+  <footer id="footer" class="footer light-background">
 
     <div class="container footer-top">
-        <div class="row gy-4">
-            <div class="col-lg-6 col-md-12 footer-about">
-                <a href="index.html" class="logo d-flex align-items-center">
-                    <span class="sitename">Georgia Coastal Ecosystems LTER</span>
-                </a>
-                <p>This material is based upon work supported by the <a href="https://www.nsf.gov/">National Science
-                        Foundation</a>
-                    under grants
-                    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=9982133">OCE-9982133</a>,
-                    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0620959">OCE-0620959</a>,
-                    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1237140">OCE-1237140</a>,
-                    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1832178">OCE-1832178</a> and
-                    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425396">OCE-2425396</a>.
-                    Any opinions, findings, conclusions, or recommendations expressed in the material are those of the
-                    author(s) and
-                    do not necessarily reflect the views of the National Science Foundation.
-                </p>  
-                <p>© <span>Copyright Georgia Coastal Ecosystems LTER</span> </p>              
-            </div>
-
-            <div class="col-lg-4 col-6 footer-links">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="#">Merryl Alber</a> - Director</li>
-                    <li><a href="#">Amanda Spivak</a> - Co-Director</li>
-                    <li><a href="#">Steve Pennings</a> - Field Coordinator</li>
-                    <li><a href="#">Adam Sapp</a> - Information Manager</li>
-                </ul>
-            </div>
-
-            <div class="col-lg-2 col-6 footer-links">
-                <h4>See Also</h4>
-                <ul>
-                    <li><a href="https://www.lternet.edu/">LTER Network Homepage</a></li>
-                    <li><a href="https://www.lternet.edu/site/">LTER Network Sites</a></li>
-                    <li>
-                        <div><a href="https://www.lternet.edu/" title="LTER Network" target="_blank"><img
-                                    src="./public/images/LTER-network-square-lg.png" alt="LTER" /></a>
-                            <a href="https://www.nsf.gov/" title="NSF" target="_blank"><img
-                                    src="./public/images/NSF_4-Color_bitmap_Logo.png" alt="NSF" /></a>
-                        </div>
-                    </li>
-            
-                </ul>
-            </div>
+      <div class="row gy-4">
+        <div class="col-lg-6 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Georgia Coastal Ecosystems LTER</span>
+          </a>
+          <p>This material is based upon work supported by the <a href="https://www.nsf.gov/">National Science
+              Foundation</a>
+            under grants
+            <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=9982133">OCE-9982133</a>,
+            <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0620959">OCE-0620959</a>,
+            <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1237140">OCE-1237140</a>,
+            <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1832178">OCE-1832178</a> and
+            <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425396">OCE-2425396</a>.
+            Any opinions, findings, conclusions, or recommendations expressed in the material are those of the
+            author(s) and
+            do not necessarily reflect the views of the National Science Foundation.
+          </p>
+          <p>© <span>Copyright Georgia Coastal Ecosystems LTER</span> </p>
         </div>
-    </div>    
-</footer>
+
+        <div class="col-lg-4 col-6 footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">Merryl Alber</a> - Director</li>
+            <li><a href="#">Amanda Spivak</a> - Co-Director</li>
+            <li><a href="#">Steve Pennings</a> - Field Coordinator</li>
+            <li><a href="#">Adam Sapp</a> - Information Manager</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>See Also</h4>
+          <ul>
+            <li><a href="https://www.lternet.edu/">LTER Network Homepage</a></li>
+            <li><a href="https://www.lternet.edu/site/">LTER Network Sites</a></li>
+            <li>
+              <div><a href="https://www.lternet.edu/" title="LTER Network" target="_blank"><img
+                    src="./public/images/LTER-network-square-lg.png" alt="LTER" /></a>
+                <a href="https://www.nsf.gov/" title="NSF" target="_blank"><img
+                    src="./public/images/NSF_4-Color_bitmap_Logo.png" alt="NSF" /></a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
