@@ -59,7 +59,7 @@ async function fetchPersonnelBioData() {
         org_div.append(org);
 
         const address_div = document.getElementById('contactInfo');
-        address_div.appendChile(mailing_add);
+        address_div.appendChild(mailing_add);
 
         const email_div = document.getElementById('emailAddress');
         email_div.append(email_add);
