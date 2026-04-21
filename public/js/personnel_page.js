@@ -42,6 +42,7 @@ async function fetchPersonnelBioData() {
         const research = user.ResearchFocus;
         const org = user.Organization;
         const mailing_add = user.Address;
+        const email_add = user.Email;
 
         const name_div = document.getElementById('name');
         name_div.append(nametxt);
@@ -49,15 +50,18 @@ async function fetchPersonnelBioData() {
         const positionTitle = document.getElementById('positionTitle');
         positionTitle.append(title);
 
-        const research_div = document.getElementById('researchEmphasis')
+        const research_div = document.getElementById('researchEmphasis');
         research_div.append(research);
 
-        const org_div = document.getElementById('organization')
-        const organization = "<strong>Primary Organization:</strong>:" + org;
-        org_div.append(organization);
+        const org_div = document.getElementById('organization');
+        //const organization = "<strong>Primary Organization:</strong>:" + org;
+        org_div.append(org);
 
-        const address_div = document.getElementById('contact_info')
+        const address_div = document.getElementById('contact_info');
         address_div.append(mailing_add);
+
+        const email_div = document.getElementById('emailAddress');
+        email_div.append(email_add);
 
         //onsole.log(searchParams.get("id"));
 
