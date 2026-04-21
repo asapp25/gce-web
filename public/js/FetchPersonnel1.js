@@ -40,8 +40,8 @@ async function fetchAndDisplayPersonnelData(){
 
 
             
-            const baseUrl = "https://gce-lter.marsci.uga.edu/public/app/personnel_bios.asp";
-            
+            //const baseUrl = "https://gce-lter.marsci.uga.edu/public/app/personnel_bios.asp";
+            const baseUrl = "https://asapp25.github.io/gce-web/public/personnel_bios.html";
 
             tableItem.innerHTML += '<td scope="row"><a href="' + baseUrl + '?id=' + nameID + '">' + friendName +  '</a></td><td>' + webCaption + '</td><td><a href="mailto:' + email + '">' + email + '</a>'
 
