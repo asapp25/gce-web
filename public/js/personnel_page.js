@@ -15,8 +15,9 @@ const id = searchParams.get("id");
 id.replace('-','_');
 id.replace('.','_');
 
+console.log(id);
 
-const user = jsonData[id];
+var user = jsonData[id];
 
 const nametxt = user.FriendlyName;
 const email = user.Email;
