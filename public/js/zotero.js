@@ -231,7 +231,7 @@ function parseZoteroResults(resultText) {
       if (showYear) {
          row += "<td>" + year + "</td>";
       }
-      row += "<td>" + result["bib"] + itemLink + " " + dataLinks + "</td>";
+      row += "<td>" + result["bib"] + " " + dataLinks + "</td>"; //edited out Item Link here - AS 2026-Apr
       if (showType) {
          row += "<td>" + itemType + "</td>";
       }
