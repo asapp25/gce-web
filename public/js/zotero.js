@@ -311,7 +311,9 @@ function encodeStyle(style) {
 function searchZotero(query, itemType, sort, start) {
    var zotId = (ZOTERO_CONFIG["zotIdType"] === "group") ? "groups/" + ZOTERO_CONFIG["zotId"] : "users/" + ZOTERO_CONFIG["zotId"];
    var collection = (ZOTERO_CONFIG["collectionKey"] === "") ? "" : "/collections/" + ZOTERO_CONFIG["collectionKey"];
-   var base = "https://api.zotero.org/" + zotId + collection + "/items?v=3&include=bib,data";
+   /* var base = "https://api.zotero.org/" + zotId + collection + "/items?v=3&include=bib,data"; */
+   var base = "https://api.zotero.org/" + zotId + collection + "/items?v=3&include=bib,data&linkwrap=1"; //edited to include DOIs as links - AS 2026-Apr
+
    var style = (ZOTERO_CONFIG["style"] === "") ? "" : "&style=" + encodeStyle(ZOTERO_CONFIG["style"]);
    var params = "&q=" + encodeURI(query) + "&itemType=" + itemType +
       "&sort=" + sort + "&start=" + start + ZOTERO_CONFIG["filterTags"];
