@@ -8,21 +8,21 @@
    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
    <!-- Favicons -->
-  <link href="./public/images/gce_logo_white.gif" rel="icon">
+   <link href="./public/images/gce_logo_white.gif" rel="icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com" rel="preconnect">
+   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <link href="./css/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="./css/vendor/aos/aos.css" rel="stylesheet">
-  <link href="./css/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="./css/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <!-- Vendor CSS Files -->
+   <link href="./css/bootstrap.min.css" rel="stylesheet">
+   <link href="./css/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+   <link href="./css/vendor/aos/aos.css" rel="stylesheet">
+   <link href="./css/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+   <link href="./css/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
    <!-- Bootstrap CSS v5.3.8 -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -112,46 +112,64 @@
 
    <main>
       <div class="container-md">
-         
+
 
          <h1 style="text-align: center;">GCE LTER Publications</h1>
 
-               <form id="zoteroSearchForm" name="zoteroSearchForm">
-         <input type="hidden" id="sort" name="sort" value="date">
-         <input class="search-input" name="q" placeholder="Enter search term" type="text">
-         <input type="submit" value="Search">
+         <form id="zoteroSearchForm" name="zoteroSearchForm">
+            <input type="hidden" id="sort" name="sort" value="date">
+            <input class="search-input" name="q" placeholder="Enter search term" type="text">
+            <input type="submit" value="Search">
 
-         <div style="margin-top: 10px">
-            <input aria-expanded="false" aria-controls="advancedInputs" class="collapse-toggle" name="expanded"
-               type="checkbox" value="true" id="advancedToggle" role="button">
-            <label class="lbl-toggle" tabindex="0" for="advancedToggle">
-               Advanced
-            </label>
-         </div>
+            <div style="margin-top: 10px">
+               <input aria-expanded="false" aria-controls="advancedInputs" class="collapse-toggle" name="expanded"
+                  type="checkbox" value="true" id="advancedToggle" role="button">
+               <label class="lbl-toggle" tabindex="0" for="advancedToggle">
+                  Advanced
+               </label>
+            </div>
 
-         <div class="collapsible" id="advancedInputs">
-            <div class="input-block">
-               <i class="fas fa-book"></i><label class="group-label" for="itemType">Item Type</label><br>
-               <select class="search-input" name="itemType" id="itemType">
-                  <option value="-attachment || note">Any</option>
-                  <option value="journalArticle">Journal Article</option>
-                  <option value="videoRecording">Video Recording</option>
-                  <option value="presentation">Presentation</option>
-                  <option value="bookSection">Book Section</option>
-                  <option value="computerProgram">Software</option>
-                  <option value="report">Report</option>
-                  <option value="conferencePaper">Conference Paper</option>
-                  <option value="newspaperArticle">Newspaper Article</option>
-                  <!--
+            <div class="collapsible" id="advancedInputs">
+               <div class="input-block">
+                  <i class="fas fa-book"></i><label class="group-label" for="itemType">Item Type</label><br>
+                  <select class="search-input" name="itemType" id="itemType">
+                     <option value="-attachment || note">Any</option>
+                     <option value="journalArticle">Journal Article</option>
+                     <option value="videoRecording">Video Recording</option>
+                     <option value="presentation">Presentation</option>
+                     <option value="bookSection">Book Section</option>
+                     <option value="computerProgram">Software</option>
+                     <option value="report">Report</option>
+                     <option value="conferencePaper">Conference Paper</option>
+                     <option value="newspaperArticle">Newspaper Article</option>
+                     <!--
                <option value="conferencePaper">Conference Paper</option>
                <option value="magazineArticle">Magazine Article</option>
                <option value="videoRecording">Video</option>-->
-               </select>
+                  </select>
+               </div>
+               <input type="submit" value="Search">
             </div>
-            <input type="submit" value="Search">
-         </div>
-      </form>
+         </form>
 
+
+          <p>Search URL will be written below:</p>
+      <p id="searchUrl"></p>
+      <p>Search results will be written below:</p>
+      <div class="resultCount" id="resultCount"></div>
+      <div class="pagination" id="paginationTop"></div>
+      <div style="display:none" id="sortDiv">
+         <label for="visibleSort">Sort by</label>
+         <select name="sort" id="visibleSort">
+            <option value="date">Publication Date</option>
+            <option value="dateAdded">Date Added</option>
+            <option value="itemType">Item Type</option>
+            <option value="creator">Creator (a-z)</option>
+            <option value="title">Title (a-z)</option>
+         </select>
+      </div>
+      <div id="searchResults"></div>
+      <div class="pagination" id="paginationBot"></div>
          <div id="loading-div"></div>
          <table id="biblio_table" class="display">
             <thead>
@@ -164,8 +182,8 @@
             <tbody>
             </tbody>
          </table>
-         <div id="search"></div>
-
+         
+ <div class="pagination" id="paginationBot"></div>
 
 
 
@@ -248,7 +266,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script type="text/javascript" charset="utf-8"
       src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-      <script src="./js/cors.js"></script>
+   <script src="./js/cors.js"></script>
    <script src="./js/zotero.js"></script>
    <!-- <script src="./js/biblio-data.js"></script>
    <script>
