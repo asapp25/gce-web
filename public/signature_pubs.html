@@ -116,12 +116,13 @@
 
          <h1 style="text-align: center;">GCE-LTER Signature Publications</h1>
          <p>
-            Examples of Signature Publications that address the broader goals of the GCE research program are 
-            listed below. The entire GCE-LTER bibliographic database can also be <a href="./publications.html">"searched online</a>, 
+            Examples of Signature Publications that address the broader goals of the GCE research program are
+            listed below. The entire GCE-LTER bibliographic database can also be <a href="./publications.html">"searched
+               online</a>,
             including publications and presentations from over 60 years of research on the Georgia Coast.
          </p>
 
-         <form id="zoteroSearchForm" name="zoteroSearchForm">
+         <form type="hidden" id="zoteroSearchForm" name="zoteroSearchForm">
             <input type="hidden" id="sort" name="sort" value="creator">
             <input type="hidden" class="search-input" name="q" placeholder="Enter search term" type="text">
             <!-- <input  type="submit" value="Search"> -->
@@ -151,37 +152,39 @@
                <option value="conferencePaper">Conference Paper</option>
                <option value="magazineArticle">Magazine Article</option>
                <option value="videoRecording">Video</option>-->
-                  <!-- </select>
+            <!-- </select>
                </div>
                <input type="submit" value="Search">
             </div> -->
          </form>
 
 
-          
-      <div class="resultCount" id="resultCount"></div>
-      <div class="pagination" id="paginationTop"></div>
-      <div style="display:none" id="sortDiv">
-         <label for="visibleSort">Sort by</label>
-         <select name="sort" id="visibleSort">
-            <option value="date">Publication Date</option>
-            <option value="dateAdded">Date Added</option>
-            <option value="itemType">Item Type</option>
-            <option value="creator">Creator (a-z)</option>
-            <option value="title">Title (a-z)</option>
-         </select>
-      </div>
-      <div id="searchResults"></div>
-     
+
+         <div class="resultCount" id="resultCount"></div>
+         <div class="pagination" id="paginationTop"></div>
+         <div style="display:none" id="sortDiv">
+            <div class="pagination" id="paginationTop"></div>
+            <label for="visibleSort">Sort by</label>
+            <select name="sort" id="visibleSort">
+               <option value="date">Publication Date</option>
+               <option value="dateAdded">Date Added</option>
+               <option value="itemType">Item Type</option>
+               <option value="creator">Creator (a-z)</option>
+               <option value="title">Title (a-z)</option>
+            </select>
+         </div>
+
+
+
          <div id="loading-div"></div>
          <div id="biblio_table" class="display"></div>
 
-         
 
 
 
 
-      </div>
+         <div class="pagination" id="paginationBot"></div>
+
    </main>
    <footer id="footer" class="footer light-background">
 
