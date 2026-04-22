@@ -279,6 +279,7 @@ function successCallback(headers, response) {
    var showPages = parseInt(ZOTERO_CONFIG["showPages"]);
    var pageTopElementId = ZOTERO_CONFIG["pagesTopElementId"];
    var pageBotElementId = ZOTERO_CONFIG["pagesBotElementId"];
+   console.log(count, limit, showPages, currentStart, pageTopElementId );
    showPageLinks(count, limit, showPages, currentStart, pageTopElementId);
    showPageLinks(count, limit, showPages, currentStart, pageBotElementId);
    var query = getParameterByName("q");
