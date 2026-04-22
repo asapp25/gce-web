@@ -3,16 +3,16 @@
 "use strict";
 
 var ZOTERO_CONFIG = {
-   "zotId": "6379466", // ID of group or user library to search in Zotero, e.g., 2211939, 2055673
+   "zotId": "2211939", // ID of group or user library to search in Zotero, e.g., 2211939, 2055673
    "zotIdType": "group", // group or user
-   "collectionKey": "", // Key of collection within library to search, e.g., "KHTHLKB5", or "" if no collection
+   "collectionKey": "KHTHLKB5", // Key of collection within library to search, e.g., "KHTHLKB5", or "" if no collection
    "filterTags": "", // For filtering results by tag(s), e.g., "&tag=LTER-Funded".  See examples at https://www.zotero.org/support/dev/web_api/v3/basics
-   "resultsElementId": "biblio_table", // Element to contain results
-   "includeCols": ["Year", "Type"], // Array of columns to include in the output table, other than Citation. The full set is ["Year", "Type", "ShowTags"]
-   "showTags": ["LTER-Funded Data at Other Archives", "Legacy Data", "Data Used by BLE"], // Include a column showing this tag if present for each item
+   "resultsElementId": "searchResults", // Element to contain results
+   "includeCols": ["Year", "Type", "ShowTags"], // Array of columns to include in the output table, other than Citation. The full set is ["Year", "Type", "ShowTags"]
+   "showTags": ["Foundational", "LTER-Funded", "LTER-Enabled"], // Include a column showing this tag if present for each item
    "showTagColName": "Relationship", // Name for the column in HTML table under which the showTags will appear
    "style": "", // Bibliography display style, e.g., apa. Leave blank for default which is chicago-note-bibliography.
-   "limit": 20, // Max number of results to retrieve per page
+   "limit": 10, // Max number of results to retrieve per page
    "urlElementId": "searchUrl", // Element to display search URL
    "countElementId": "resultCount", // Element showing number of results
    "pagesTopElementId": "paginationTop", // Element to display result page links above results
@@ -25,10 +25,9 @@ var ZOTERO_CONFIG = {
 // Get URL arguments
 function getParameterByName(name, url) {
    if (!url) url = window.location.href;
-   name = name.replace(/[\[\]]/g, "\\$&");   
+   name = name.replace(/[\[\]]/g, "\\$&");
    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
       results = regex.exec(url);
-      //console.log(results[2]);
    if (!results) return null;
    if (!results[2]) return "";
    return decodeURIComponent(results[2].replace(/\+/g, " "));
@@ -153,17 +152,24 @@ function parseZoteroResults(resultText) {
    function parseDataLinks(extra) {
       if (extra) {
          var dois = extra.split(/\r?\n/);
-         var links = []
+         var urls = [];
          for (var i = 0; i < dois.length; i++) {
             var doi = dois[i];
-            var j = i + 1
             if (doi.startsWith("https://doi.org/")) {
-               if (dois.length == 1) {
-                  links.push(' <a href="' + doi + '" target="_blank" rel="noopener">Data link.</a>');
-               } else {
-               links.push(' <a href="' + doi + '" target="_blank" rel="noopener">Data link ' + j + '.</a>');
+               urls.push(doi);
             }
-            }
+         }
+         var links = [];
+         if (urls.length == 0) {
+            return "";
+         } else if (urls.length == 1) {
+            links.push(' <a href="' + urls[0] + '" target="_blank" rel="noopener" aria-label="open data in new tab">Data link.</a>');
+         } else {
+            for (var i = 0; i < urls.length; i++) {
+               var url = urls[i];
+               var j = i + 1;
+               links.push(' <a href="' + url + '" target="_blank" rel="noopener" aria-label="open data in new tab">Data link ' + j + '.</a>');
+            }   
          }
          return links.join(" ");
       } else {
@@ -173,7 +179,7 @@ function parseZoteroResults(resultText) {
 
    function parseItemLink(url) {
       if (url)
-         return '<a href="' + url + '" target="_blank" rel="noopener">Data link.</a>';
+         return '<a href="' + url + '" target="_blank" rel="noopener" aria-label="open item in new tab">Item link.</a>';
       else
          return "";
    }
@@ -275,7 +281,7 @@ function successCallback(headers, response) {
    var pageBotElementId = ZOTERO_CONFIG["pagesBotElementId"];
    showPageLinks(count, limit, showPages, currentStart, pageTopElementId);
    showPageLinks(count, limit, showPages, currentStart, pageBotElementId);
-   //var query = getParameterByName("q");
+   var query = getParameterByName("q");
    showResultCount(query, count, limit, currentStart, ZOTERO_CONFIG["countElementId"]);
 }
 
@@ -303,7 +309,7 @@ function encodeStyle(style) {
 
 // Passes search URL and callbacks to CORS function
 function searchZotero(query, itemType, sort, start) {
-   /* var zotId = (ZOTERO_CONFIG["zotIdType"] === "group") ? "groups/" + ZOTERO_CONFIG["zotId"] : "users/" + ZOTERO_CONFIG["zotId"];
+   var zotId = (ZOTERO_CONFIG["zotIdType"] === "group") ? "groups/" + ZOTERO_CONFIG["zotId"] : "users/" + ZOTERO_CONFIG["zotId"];
    var collection = (ZOTERO_CONFIG["collectionKey"] === "") ? "" : "/collections/" + ZOTERO_CONFIG["collectionKey"];
    var base = "https://api.zotero.org/" + zotId + collection + "/items?v=3&include=bib,data";
    var style = (ZOTERO_CONFIG["style"] === "") ? "" : "&style=" + encodeStyle(ZOTERO_CONFIG["style"]);
@@ -312,10 +318,7 @@ function searchZotero(query, itemType, sort, start) {
    var limit = "&limit=" + ZOTERO_CONFIG["limit"];
    var url = base + params + style + limit;
    showUrl(url);
-   showLoading(true); */
-
-   var url = "https://api.zotero.org/groups/6379466/items?format=json";
-
+   showLoading(true);
    makeCorsRequest(url, successCallback, errorCallback);
 }
 

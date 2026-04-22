@@ -100,7 +100,7 @@ function showResultCount(query, total, limitPerPage, currentStartIndex, domEleme
    else {
       var forQuery = "";
    }
-   if (total <= limitPerPage) {
+   if (limitPerPage === null || total <= limitPerPage) {
       var showing = "</p>";
    }
    else {
