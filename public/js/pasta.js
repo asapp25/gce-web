@@ -306,6 +306,7 @@ function searchPasta(limit, pageStart) {
    var url = QUERY_URL + params;
    showUrl(url);
    showLoading(true);
+   console.log(url);
    makeCorsRequest(url, null, successCallback, errorCallback);
 }
 
@@ -482,7 +483,7 @@ window.onload = function () {
       var dateQuery = makeDateQuery(sYear, eYear, datayear, pubyear);
       var sort = makeSortParam(sortBy);
       var url = base + encodeURI(params + query + dateQuery + sort);
-      console.log(url);
+      //console.log(url);
       return url;
    }
 
