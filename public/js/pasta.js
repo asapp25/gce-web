@@ -306,6 +306,8 @@ function searchPasta(limit, pageStart) {
    var url = QUERY_URL + params;
    showUrl(url);
    showLoading(true);
+   console.log(QUERY_URL);
+   console.log(params);
    console.log(url);
    makeCorsRequest(url, null, successCallback, errorCallback);
 }
