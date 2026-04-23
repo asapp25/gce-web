@@ -124,21 +124,21 @@
 
          <form id="zoteroSearchForm" name="zoteroSearchForm">
             <input type="hidden" id="sort" name="sort" value="creator">
-            <input hidden class="search-input" name="q" placeholder="Enter search term" type="text">
-            <input  hidden type="submit" value="Search">
+            <input  class="search-input" name="q" placeholder="Enter search term" type="text">
+            <input  type="submit" value="Search">
 
             <div style="margin-top: 10px">
-               <input hidden aria-expanded="false" aria-controls="advancedInputs" class="collapse-toggle" name="expanded"
+               <input  aria-expanded="false" aria-controls="advancedInputs" class="collapse-toggle" name="expanded"
                   type="checkbox" value="true" id="advancedToggle" role="button">
-               <label hidden class="lbl-toggle" tabindex="0" for="advancedToggle">
+               <label  class="lbl-toggle" tabindex="0" for="advancedToggle">
                   Advanced
                </label>
             </div>
 
             <div hidden class="collapsible" id="advancedInputs">
-               <div type = "hidden" class="input-block">
+               <div  class="input-block">
                   <i class="fas fa-book"></i><label class="group-label" for="itemType">Item Type</label><br>
-                  <select type="hidden" class="search-input" name="itemType" id="itemType">
+                  <select  class="search-input" name="itemType" id="itemType">
                      <option value="-attachment || note">Any</option>
                      <option value="journalArticle">Journal Article</option>
                      <option value="videoRecording">Video Recording</option>
@@ -160,9 +160,9 @@
 
 
 
-         <div hidden class="resultCount" id="resultCount"></div>
+         <div class="resultCount" id="resultCount"></div>
          <div class="pagination" id="paginationTop"></div>
-         <div hidden style="display:none" id="sortDiv">            
+         <div  style="display:none" id="sortDiv">            
             <label for="visibleSort">Sort by</label>
             <select name="sort" id="visibleSort">
                <option value="date">Publication Date</option>
