@@ -43,6 +43,6 @@ function makeCorsRequest(url, successCallback, errorCallback) {
    xhr.onerror = function () {
       errorCallback();
    };
-   console.log(successCallback); 
+   //console.log(successCallback); 
    xhr.send(); 
 }
