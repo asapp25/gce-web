@@ -34,7 +34,7 @@ function makeCorsRequest(url, successCallback, errorCallback) {
          var parts = headers[i].split(": ");
          header_dict[parts[0].toLowerCase()] = parts[1];
       }
-      console.log('header' + header_dict);
+      console.log(header_dict);
       console.log(xhr.responseText);
 
       successCallback(header_dict, xhr.responseText);
