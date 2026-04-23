@@ -42,5 +42,5 @@ function makeCorsRequest(url, successCallback, errorCallback) {
       errorCallback();
    };
 
-   xhr.send();
+   xhr.send(); 
 }
