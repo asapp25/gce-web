@@ -196,7 +196,7 @@ function parseZoteroResults(resultText) {
       return "<p>Your search returned no results.</p>";
    }
 
-   var header = '<div class="table-responsive-xl"><table class="table table-striped display">';
+   var header = '<div class="table-responsive-xl"><table class="display">';
    var showYear = (ZOTERO_CONFIG["includeCols"].indexOf("Year") !== -1);
    var showType = (ZOTERO_CONFIG["includeCols"].indexOf("Type") !== -1);
    var showTags = (ZOTERO_CONFIG["includeCols"].indexOf("ShowTags") !== -1);
