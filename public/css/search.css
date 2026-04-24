@@ -100,13 +100,13 @@ input[type='checkbox'].collapse-toggle {
 }
 
 .yeardiv {
-   display: inline-block;
+   display: inline;
    margin-left: 10px;
    margin-bottom: 5px;
 }
 
 .input-block {
-   border-bottom: 1px dashed gray;
+   /* border-bottom: 1px dashed gray; */
    margin-bottom: 5px;
    max-width: 256px;
 }
