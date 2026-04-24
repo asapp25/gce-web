@@ -1,6 +1,28 @@
 .loading {
+	display: none;
     width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
     margin: auto;
+}
+
+.dataset-title a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.dataset-title a:hover {
+    text-decoration: underline;
+}
+
+.dataset-author {
+    color: #808080;
 }
 
 .search-input {
@@ -14,10 +36,6 @@
 
 .result-query {
     font-weight: bold;
-}
-
-#searchResults {
-   margin-top: 10px;
 }
 
 .pagination {
@@ -75,6 +93,16 @@ input[type='checkbox'].collapse-toggle {
    max-height: 0;
    overflow: hidden;
    transition: max-height .25s ease-in-out;
+}
+
+.yearbox {
+   width: 50px;
+}
+
+.yeardiv {
+   display: inline-block;
+   margin-left: 10px;
+   margin-bottom: 5px;
 }
 
 .input-block {
