@@ -17,9 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
 
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous">
-      
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
    <link href="./css/auto-complete.css" rel="stylesheet" type="text/css">
    <!-- Vendor CSS Files -->
    <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -154,7 +154,7 @@
                                  title="The name of the creator or originator of a dataset">
                            </div>
                         </div>
-                        <div class="col-lg-3" d-flex align-self-end>
+                        <!-- <div class="col-lg-3" d-flex align-self-end>
                            <div class="input-block">
                               <i class="fas fa-calendar-alt"></i><span class="group-label">Year</span><br>
                               <div class="yeardiv">
@@ -175,6 +175,39 @@
                               </div>
                            </div>
                         </div>
+ -->
+                        <div class="col-lg-3" d-flex align-self-end>
+                           <div class="input-block">
+                              <i class="fas fa-calendar-alt"></i><span class="group-label">Year</span><br>
+                              <div class="container">
+                                 <div class="row">
+                                    <label for="min_year">Start</label>
+                                    <label for="max_year">End</label>
+                                    <input id="data_year" name="datayear" value="y" type="checkbox"
+                                       title="Only show results with data collected within the year range">
+                                    <label class="form-check-label" for="data_year"> Data coverage </label><br>
+                                    
+                                 </div>
+                                 <div class="row">
+                                    <input class="yearbox" id="min_year" name="s" value="1900" type="number">
+                                    <input class="yearbox" id="max_year" name="e" value="2018" type="number">
+                                    <input id="publish_year" name="pubyear" value="y" type="checkbox"
+                                       title="Only show results that were published within the year range">
+                                    <label class="form-check-label" for="publish_year"> Publish year </label>
+                                 </div>
+                                 <!-- <div class="yeardiv">
+                                    <input id="data_year" name="datayear" value="y" type="checkbox"
+                                       title="Only show results with data collected within the year range">
+                                    <label class="form-check-label" for="data_year"> Data coverage </label><br>
+                                    <input id="publish_year" name="pubyear" value="y" type="checkbox"
+                                       title="Only show results that were published within the year range">
+                                    <label class="form-check-label" for="publish_year"> Publish year </label>
+                                 </div> -->
+                              </div>
+                           </div>
+                        </div>
+
+
                         <div class="col-lg-3">
                            <div class="input-block">
                               <i class="fas fa-globe"></i><label class="group-label" for="geo">Location</label>
