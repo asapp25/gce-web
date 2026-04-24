@@ -181,19 +181,23 @@
                               <i class="fas fa-calendar-alt"></i><span class="group-label">Year</span><br>
                               <div class="container">
                                  <div class="row">
-                                    <label for="min_year">Start</label>
-                                    <label for="max_year">End</label>
-                                    <input id="data_year" name="datayear" value="y" type="checkbox"
-                                       title="Only show results with data collected within the year range">
-                                    <label class="form-check-label" for="data_year"> Data coverage </label><br>
-                                    
+                                    <div class="yeardiv">
+                                       <label for="min_year">Start</label>
+                                       <label for="max_year">End</label>
+                                       <input id="data_year" name="datayear" value="y" type="checkbox"
+                                          title="Only show results with data collected within the year range">
+                                       <label class="form-check-label" for="data_year"> Data coverage </label>
+
+                                    </div>
                                  </div>
                                  <div class="row">
-                                    <input class="yearbox" id="min_year" name="s" value="1900" type="number">
-                                    <input class="yearbox" id="max_year" name="e" value="2018" type="number">
-                                    <input id="publish_year" name="pubyear" value="y" type="checkbox"
-                                       title="Only show results that were published within the year range">
-                                    <label class="form-check-label" for="publish_year"> Publish year </label>
+                                    <div class="yeardiv">
+                                       <input class="yearbox" id="min_year" name="s" value="1900" type="number">
+                                       <input class="yearbox" id="max_year" name="e" value="2018" type="number">
+                                       <input id="publish_year" name="pubyear" value="y" type="checkbox"
+                                          title="Only show results that were published within the year range">
+                                       <label class="form-check-label" for="publish_year"> Publish year </label>
+                                    </div>
                                  </div>
                                  <!-- <div class="yeardiv">
                                     <input id="data_year" name="datayear" value="y" type="checkbox"
