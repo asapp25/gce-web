@@ -53,7 +53,7 @@ function loadmap(urlKML,latCenter,lonCenter,initZoom,showControls) {
 	
 	//initialize map with options
 	map = new google.maps.Map(document.getElementById('map_canvas'),myOptions);
-	console.log(urlKML);
+	
 	// enable drag/zoom control if showControls = true
 	if (showControls) {
 		map.enableKeyDragZoom({
